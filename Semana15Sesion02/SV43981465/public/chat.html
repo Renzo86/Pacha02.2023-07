@@ -87,7 +87,6 @@
             user = data.username;
         });
 		socket.on('typing' , function (data) {
-			console.log(data)
 			$('.status').html(data.msg);
         });
 		$('#message').focus( function () {
